@@ -21,11 +21,11 @@ namespace Mars_ServiceListingPage_Automation.Pages
             categorySelection.Click();//Select Graphics & Design
             IWebElement subCategory = driver.FindElement(By.CssSelector("#service-listing-section > div.ui.container > div > form > div:nth-child(3) > div.twelve.wide.column > div > div:nth-child(2) > div:nth-child(1) > select"));
             subCategory.Click();//Click on Subcategory
-            IWebElement subcategorySelection = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[3]/div[2]/div/div[2]/div[1]/select/option[6]"));
-            subCategory.Click();//Select Search & Display Marketing
+            IWebElement subcategorySelection = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[3]/div[2]/div/div[2]/div[1]/select/option[5]"));
+            subcategorySelection.Click();//Select Search & Display Marketing
 
             IWebElement newTag = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[4]/div[2]/div/div/div/div/input"));
-            newTag.SendKeys("A");//Add a new tag
+            newTag.SendKeys("A" + "\n");//Add a new tag
 
             IWebElement serviceType = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[5]/div[2]/div[1]/div[1]/div/input"));
             serviceType.Click();//Select service type
@@ -47,17 +47,23 @@ namespace Mars_ServiceListingPage_Automation.Pages
             endTime.SendKeys("0500pm");//Select available end time
 
             IWebElement skillTrades = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[8]/div[2]/div/div[1]/div/input"));
-            skillTrades.Click();
+            skillTrades.Click();//Select skill trade status
 
-            //Add file
+            IWebElement skillExchangeTag = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[8]/div[4]/div/div/div/div/div/input"));
+            skillExchangeTag.SendKeys("B" + "\n");//Add a tag to skill exchange
+
+            ////Add file
 
             IWebElement activeStatus = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[10]/div[2]/div/div[1]/div/input"));
             activeStatus.Click();//Select active status
 
-            IWebElement saveBTN = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[10]/div[2]/div/div[1]/div/input"));
+    }
+
+        public void saveSkill(IWebDriver driver)
+        {
+            
+            IWebElement saveBTN = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[11]/div/input[1]"));
             saveBTN.Click();//Click on the save button to save the changes
-
-
         }
-     }
+    }
 }
