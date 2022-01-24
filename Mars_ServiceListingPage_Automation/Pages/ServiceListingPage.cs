@@ -69,7 +69,7 @@ namespace Mars_ServiceListingPage_Automation.Pages
 
         public void editDescription(IWebDriver driver)
         {
-            Wait.WaitToBeVisible(driver, "Xpath", "/html/body/div/div/div[1]/div[2]/div/form/div[2]/div/div[1]/h3", 2);
+            Wait.WaitToBeVisible(driver, "Xpath", "/html/body/div/div/div[1]/div[2]/div/form/div[2]/div/div[1]/h3", 2);//Wait description text to be visable
             IWebElement description = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[2]/div/div[2]/div[1]/textarea"));
             description.Clear();
             description.SendKeys("Design and build the website from scratch. Front end and back end development");//Edit the description

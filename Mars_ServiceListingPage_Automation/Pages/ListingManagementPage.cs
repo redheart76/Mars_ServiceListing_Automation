@@ -20,7 +20,7 @@ namespace Mars_ServiceListingPage_Automation.Pages
             IWebElement deleteIcon = driver.FindElement(By.XPath("/html/body/div/div/div/div[2]/div[1]/div[1]/table/tbody/tr/td[8]/div/button[3]/i"));
             deleteIcon.Click();
             IWebElement yesIcon = driver.FindElement(By.XPath("/html/body/div[2]/div/div[3]/button[2]/i"));
-            yesIcon.Click();
+            yesIcon.Click();//Click delete and accept
 
         }
 
@@ -35,7 +35,7 @@ namespace Mars_ServiceListingPage_Automation.Pages
         {
             
             IWebElement editIcon = driver.FindElement(By.XPath("/html/body/div/div/div/div[2]/div[1]/div[1]/table/tbody/tr/td[8]/div/button[2]/i"));
-            editIcon.Click();
+            editIcon.Click();//Click on edit icon
         }
 
         public void assertNewDescriptionIsDisplayed(IWebDriver driver)
