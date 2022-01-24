@@ -24,9 +24,10 @@ namespace Mars_ServiceListingPage_Automation.Pages
 
         }
 
-        public void assertConfirmationIsDisplayed(IWebDriver driver)
+        public void assertDeletion(IWebDriver driver)
         {
-            IWebElement deletionText = driver.FindElement(By.XPath(""));
+            Wait.WaitToBeVisible(driver, "Xpath", "/html/body/div/div/div/div[2]/h3", 2);
+            IWebElement deletionText = driver.FindElement(By.XPath("/html/body/div/div/div/div[2]/h3"));
             Assert.IsTrue(deletionText.Displayed);//Assert whether "You do not have any service listings!" is displayed
         }
 

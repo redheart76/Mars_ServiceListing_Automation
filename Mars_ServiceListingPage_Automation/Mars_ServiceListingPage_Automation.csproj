@@ -70,6 +70,11 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>EditMySkill.feature.cs</LastGenOutput>
     </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\DeleteSkill.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DeleteSkill.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Features\AddNewSkill.feature.cs">
@@ -77,6 +82,9 @@
     </Compile>
     <Compile Update="Features\EditMySkill.feature.cs">
       <DependentUpon>EditMySkill.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\DeleteSkill.feature.cs">
+      <DependentUpon>DeleteSkill.feature</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>
