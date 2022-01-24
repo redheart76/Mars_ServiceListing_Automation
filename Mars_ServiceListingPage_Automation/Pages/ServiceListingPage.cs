@@ -1,4 +1,5 @@
 ﻿using System;
+using Mars_ServiceListingPage_Automation.Utilities;
 using OpenQA.Selenium;
 
 namespace Mars_ServiceListingPage_Automation.Pages
@@ -64,6 +65,14 @@ namespace Mars_ServiceListingPage_Automation.Pages
             
             IWebElement saveBTN = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[11]/div/input[1]"));
             saveBTN.Click();//Click on the save button to save the changes
+        }
+
+        public void editDescription(IWebDriver driver)
+        {
+            Wait.WaitToBeVisible(driver, "Xpath", "/html/body/div/div/div[1]/div[2]/div/form/div[2]/div/div[1]/h3", 2);
+            IWebElement description = driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[2]/div/div[2]/div[1]/textarea"));
+            description.Clear();
+            description.SendKeys("Design and build the website from scratch. Front end and back end development");//Edit the description
         }
     }
 }

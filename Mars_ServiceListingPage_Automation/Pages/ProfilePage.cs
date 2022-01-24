@@ -21,6 +21,7 @@ namespace Mars_ServiceListingPage_Automation.Pages
             Wait.WaitToBeClickable(driver, "Xpath", "/html/body/div[1]/div/section[1]/div/div[2]/a", 2);
             IWebElement managerListingsTab = driver.FindElement(By.XPath("/html/body/div[1]/div/section[1]/div/a[3]"));
             managerListingsTab.Click();//Click on manager listings tab
+            Wait.WaitToBeClickable(driver, "Xpath", "/html/body/div/div/div/div[2]/div[1]/div[1]/table/tbody/tr/td[8]/div/button[2]/i", 3);//Wait edit icon to be clickable
         }
     }
 }

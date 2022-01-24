@@ -55,13 +55,28 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>DeleteSkill.feature.cs</LastGenOutput>
     </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Tests\DeleteSkillSteps.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DeleteSkillSteps.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\DeletSkill.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DeletSkill.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\EditMySkill.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EditMySkill.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Features\AddNewSkill.feature.cs">
       <DependentUpon>AddNewSkill.feature</DependentUpon>
     </Compile>
-    <Compile Update="Pages\DeleteSkill.feature.cs">
-      <DependentUpon>DeleteSkill.feature</DependentUpon>
+    <Compile Update="Features\EditMySkill.feature.cs">
+      <DependentUpon>EditMySkill.feature</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>

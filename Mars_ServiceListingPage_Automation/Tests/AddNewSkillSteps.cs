@@ -1,5 +1,6 @@
 ﻿using System;
 using Mars_ServiceListingPage_Automation.Pages;
+using Mars_ServiceListingPage_Automation.Utilities;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using TechTalk.SpecFlow;
@@ -7,7 +8,7 @@ using TechTalk.SpecFlow;
 namespace Mars_ServiceListingPage_Automation.Tests
 {
     [Binding]
-    public class AddNewSkillSteps
+    public class AddNewSkillSteps : CommonDriver
     {
             private readonly ScenarioContext _scenarioContext;
 
@@ -16,7 +17,6 @@ namespace Mars_ServiceListingPage_Automation.Tests
                 _scenarioContext = scenarioContext;
             }
 
-            IWebDriver driver = new ChromeDriver();
 
             [Given(@"I have logged in my account")]
             public void GivenIHaveLoggedInMyAccount()
