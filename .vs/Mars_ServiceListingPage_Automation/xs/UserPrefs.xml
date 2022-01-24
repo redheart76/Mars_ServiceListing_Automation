@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{D5D2779F-9A70-4F65-AD17-F87715562610}|Default">
+  <MonoDevelop.Ide.ItemProperties.Mars__ServiceListingPage__Automation PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Mars_ServiceListingPage_Automation" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Mars_ServiceListingPage_Automation" expanded="True">
+            <Node name="Mars_ServiceListingPage_Automation" expanded="True">
+              <Node name="Mars_ServiceListingPage_Automation.Features" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
